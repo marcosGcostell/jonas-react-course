@@ -54,7 +54,7 @@ body {
   max-width: 42rem;
   background-color: var(--color-background-500);
   border-radius: 0.9rem;
-  overflow: unset;
+  overflow: scroll;
   position: relative;
 }
 
@@ -138,7 +138,7 @@ body {
 .list {
   list-style: none;
   padding: 0.8rem 0;
-  overflow: unset;
+  overflow: scroll;
 }
 
 .list-watched {
@@ -206,6 +206,12 @@ body {
 
 .btn-delete:hover {
   background-color: var(--color-red-dark);
+}
+
+.box::-webkit-scrollbar,
+.list::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
 }
 
 /* ******* */
